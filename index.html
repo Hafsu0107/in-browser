@@ -1,36 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | In-browser markdown editor</title>
-</head>
-<body>
-  <!-- Sidebar start -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css">
 
-  My Documents
+    <title>Frontend Mentor | In-browser markdown editor</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar start -->
+      <nav class="side-bar">
+        <img src="assets/icon-menu.svg" class="icon-menu" />
+        <img src="assets/logo.svg" /> 
+        <span class="line">|</span>
+        <div class="document">
+          <img src="assets/icon-document.svg" class="icon-document" />
+          <span class="doc-name">Document Name</span>
+          <p class="md">welcome.md</p>
+        </div>
+        <div class="icons">
+        <img src="assets/icon-delete.svg" class="icon-delete" />
+        <button class="text"><img src="assets/icon-save.svg" class="icon-save" />Save Changes</button>
+      </div>
+      </nav>
+      <!-- Sidebar end -->
 
-  New Document
+      <!-- Header start -->
 
-  <!-- Sidebar end -->
+      <div class="markdown">
+        <h2 class="main-heading">Markdown</h2>
+        <h3># Welcome to Markdown</h3>
+        <p>
+          Markdown is a lightweight markup language that you can use to add
+          formating elements to plaintext text documents
+        </p>
+        <h2>## How to use this ?</h2>
+        <p>
+          <li>1. Write markdown in the markdown editor window</li>
+          <li>2. See the rendered markdown in the preview window</li>
+        </p>
 
-  <!-- Header start -->
+        <div class="Features">
+          <h2>Features</h2>
+          <p>
+            <li>
+              - Create headings, paragraphs, links, blockquotes, inline-code,
+              code-blocks and lists
+            </li>
+            <li>- Name and save the document to access again later</li>
+            <li>
+              - Choose between Light or Dark mood depending on your preference
+            </li>
+            <li>
+              > This is an example of blackquote. If you would like to learn more
+              about markdown syntax. you can visit this [markdown
+              cheetsheet](https://www.markdownguide.org/cheat-sheet/).
+            </li>
+          </p>
+          <div class="heading">
+            <h2>#### Headings</h2>
+            <p>
+              To create a heading, add the hash sign (#) before the heading. The
+              numbers of number signs you use should correspond to the heading
+              level. You'll see in this guide that we've used to all six heading
+              levels (not necessarily in the correct way you should use
+              headings! ) to illustrate how they should look. /p>
+            </p>
+          </div>
 
-  Document Name
+          <div class="list">
+            <h2>#### List </h2>
+            <p>You can see examples of ordered  and unordered lists above. </p>
+            <h2>###### Code Blocks </h2>
+            <p>The markdown editors allow for inline-code snippets. like this: <p>I'am inline</p>. It also allows for larger code like this: </p>...
 
-  Save Changes
+          </div>
+        </div>
+         <!-- Header end -->
 
-  <!-- Header end -->
+          <!-- Main start -->
+          <div class="main">
+            <h2>main</h2>
+              <p> h1  This is a larger code block  h1 </p>
+              <h2>main</h2>
+          </div>
+           <!-- Main end -->
 
-  <!-- Main start -->
 
-  Markdown
 
-  Preview
+      </div>
+    </div>
 
-  <!-- Main end -->
-</body>
+   
+  </body>
 </html>
