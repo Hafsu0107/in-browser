@@ -7,6 +7,10 @@ body {
   background-color: rgb(21, 20, 20);
   color: #c2bfbf;
 }
+.container {
+  display: flex;
+  flex-direction: row;
+}
 .side-bar {
   background-color: #c2bfbf2f;
   display: flex;
@@ -36,11 +40,12 @@ body {
   left: 264px;
 }
 .markdown {
-  max-width: 450px;
+  max-width: 533px;
   font-size: 13px;
   list-style: none;
   line-height: 2.5;
   font-family: "Roboto,Mono", sans-serif;
+  padding-left: 1%;
 }
 .icons {
   position: absolute;
@@ -64,4 +69,46 @@ button {
   position: absolute;
   top: 32%;
   left: 32%;
+}
+
+.preview {
+  max-width: 639px;
+  line-height: 2;
+  color: #e5dddd;
+  padding-left: 2%;
+
+  list-style: mlme;
+  border-left: 2px solid #fff;
+}
+.sub-heading {
+  background-color: rgb(42, 38, 38);
+  font-family: "Roboto,Mono", sans-serif;
+  color: rgb(200, 196, 196);
+}
+.Features li {
+  list-style: circle;
+}
+.example {
+  background-color: #565050;
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  border-left: 3px solid rgb(190, 82, 19);
+  font-family: "Roboto,Mono", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+.preview .main {
+  background-color: #424040;
+  color: #b9b8b8;
+  border-radius: 4px;
+  font-family: "Roboto,Mono", sans-serif;
+}
+.main .text {
+  padding: 3px;
+}
+.preview .icon-preview {
+  position: absolute;
+  right: 8%;
+  top: 9%;
 }
