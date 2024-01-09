@@ -15,26 +15,26 @@
     <title>Frontend Mentor | In-browser markdown editor</title>
   </head>
   <body>
-    <!-- Sidebar start -->
-    <nav class="side-bar">
-      <img src="assets/icon-menu.svg" class="icon-menu" />
-      <img src="assets/logo.svg" />
-      <span class="line">|</span>
-      <div class="document">
-        <img src="assets/icon-document.svg" class="icon-document" />
-        <span class="doc-name">Document Name</span>
-        <p class="md">welcome.md</p>
-      </div>
-      <div class="icons">
-        <img src="assets/icon-delete.svg" class="icon-delete" />
+    <sec class="header">
+      <nav class="side-bar">
+        <img src="assets/icon-menu.svg" class="icon-menu" />
+        <img src="assets/logo.svg" />
+
+        <div class="document">
+          <img src="assets/icon-document.svg" class="icon-document" />
+          <span class="doc-name">Document Name</span>
+          <p class="md">welcome.md</p>
+        </div>
+        <div class="icons">
+          <img src="assets/icon-delete.svg" class="icon-delete" />
+        </div>
         <button class="text">
           <img src="assets/icon-save.svg" class="icon-save" />Save Changes
         </button>
-      </div>
-    </nav>
-    <!-- Sidebar end -->
+      </nav>
+    </sec>
 
-    <!-- Header start -->
+    <!-- main start -->
     <div class="container">
       <div class="markdown">
         <h2 class="main-heading">Markdown</h2>
@@ -49,7 +49,7 @@
           <li>2. See the rendered markdown in the preview window</li>
         </p>
 
-        <div class="Features">
+        <div class="features">
           <h2>Features</h2>
           <p>
             <li>
@@ -89,9 +89,9 @@
             ...
           </div>
         </div>
-        <!-- Header end -->
+        <!-- main end -->
 
-        <!-- Main start -->
+        <!-- footer -->
         <div class="main">
           <h2><span><</span>main></h2>
           <p>
@@ -99,13 +99,17 @@
           </p>
           <h2><span><</span>/main></h2>
         </div>
-        <!-- Main end -->
+        <!-- footer -->
       </div>
+      <!-- main start  -->
       <div class="preview">
-        <h2 class="sub-heading">Preview</h2>
-        <div class="icon-preview">
-          <img src="assets/icon-show-preview.svg" />
+        <div class="headings">
+          <h2>Preview</h2>
+          <div class="icon-preview">
+            <img src="assets/icon-show-preview.svg" />
+          </div>
         </div>
+
         <h1>Welcome to Markdown</h1>
         <p>
           Markdown is a lightweight markup language that you can use to add
@@ -157,10 +161,9 @@
             ...
           </div>
         </div>
-        <li>larger code like this:</li>
-        <!-- Header end -->
+        <!-- main end -->
 
-        <!-- Main start -->
+        <!-- footer -->
         <div class="main">
           <div class="text">
             <h2><span><</span>main></h2>
@@ -170,7 +173,7 @@
             <h2><span><</span>/main></h2>
           </div>
         </div>
-        <!-- Main end -->
+        <!-- footer-->
       </div>
     </div>
   </body>
